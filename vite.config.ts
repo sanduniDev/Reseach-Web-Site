@@ -6,5 +6,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/agile-user-story-builder/',
+  base: '/Reseach-Web-Site/',
 });

@@ -11,50 +11,45 @@ export const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Sanduni Sathsarani",
-    role: "Team Leader",
-    bio: "Sanduni has over 2+ years of experience in agile methodologies and software engineering. Their research focuses on improving agile practices through innovative tools.",
-    imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQH9KJT7MPE_lQ/profile-displayphoto-shrink_400_400/B56ZZXAaJPHsAg-/0/1745216447948?e=1753315200&v=beta&t=jfgi2a4Lp4zp64sxO8GLVw9Wl2omd7wuwrUKJPSO6Nw",
+    role: "Software Quality Assurance Lead",
+    bio: "Sanduni is a Software Quality Assurance Engineer specializing in automation, performance testing, API testing, and manual mobile & web testing. As a final year undergraduate at SLIIT, she brings extensive practical experience in ensuring software quality and reliability to the research project.",
+    imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQH9KJT7MPE_lQ/profile-displayphoto-shrink_200_200/B56ZZXAaJPHsAY-/0/1745216447948?e=1753920000&v=beta&t=ZE22w9Mhupgov8oHA-7I1BOQKxl-FldPBP3AVHqJXO4",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/alexjohnson",
-      github: "https://github.com/alexjohnson",
-      twitter: "https://twitter.com/alexjohnson",
-      email: "sathsarani.hes@gmail.com"
+      linkedin: "https://www.linkedin.com/in/h-e-s-sathsarani/",
+      email: "sathsarani.hes@example.com"
     }
   },
   {
     id: 2,
     name: "Yasitha Sandun",
-    role: "Member",
-    bio: "Sam specializes in natural language processing and its applications in software engineering. They bring expertise in machine learning approaches to user story generation.",
-    imageUrl: "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=600",
+    role: "Software Development Intern",
+    bio: "Yasitha is an Intern Software Engineer and student at SLIIT from Matara District. He contributes valuable hands-on development experience and fresh perspectives on modern software engineering practices to the agile research initiatives.",
+    imageUrl: "https://media.licdn.com/dms/image/v2/C4E03AQF3qUnHExYGWQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1627653602626?e=1753920000&v=beta&t=eehNxncuR_KTG3cpDBD0kOSYvx9Y2lhdENo30oEkDLY",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/samrivera",
-      github: "https://github.com/samrivera",
-      email: "sam.rivera@example.com"
+      linkedin: "https://www.linkedin.com/in/yasandun-9028bbe/",
+      email: "yasithasandu@example.com"
     }
   },
   {
     id: 3,
     name: "Ravindu Rusith",
-    role: "Member",
-    bio: "Taylor has implemented numerous agile projects and brings practical industry experience to the research team, helping bridge theory with practice.",
-    imageUrl: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600",
+    role: "Research Developer",
+    bio: "Ravindu is an IT Undergraduate at SLIIT with strong development skills and active GitHub contributions. Based in Matara District, he specializes in implementing research prototypes and contributing to the technical development of agile methodology tools.",
+    imageUrl: "https://media.licdn.com/dms/image/v2/C5603AQGjlHAnRp4Nhg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1624464298093?e=1753920000&v=beta&t=o9K9uz1RMqxsuZXi6Io4UxBSlC6dnXbAfXdvgGf5XIg",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/taylorkim",
-      github: "https://github.com/taylorkim",
-      twitter: "https://twitter.com/taylorkim",
-      email: "taylor.kim@example.com"
+      linkedin: "https://linkedin.com/in/ravindu-rusith",
+      email: "Ravindu.rusith@gmail.com"
     }
   },
   {
     id: 4,
-    name: "Shakila Himaranga",
-    role: "Member",
-    bio: "Jordan studies the human factors in agile development, focusing on how tools can better serve diverse team needs and improve collaboration.",
-    imageUrl: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Shakila Waidyasekara",
+    role: "Information Technology Specialist",
+    bio: "Shakila is pursuing a BSc(Hons) in Information Technology, specializing in Information Technology at SLIIT. From Kegalle District, he brings deep technical knowledge and innovative approaches to information systems that support agile development processes.",
+    imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQFrrcyvFugCMQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688216278307?e=1753920000&v=beta&t=Rig8kakWPfnwlYSUQC30I5ke2asxzSgYmXgCYtjUnlE",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/jordanpatel",
-      email: "jordan.patel@example.com"
+      linkedin: "https://www.linkedin.com/in/shakila-waidyasekara-6b856a269/",
+      email: "shimaranga@gmail.com"
     }
   }
 ];
@@ -156,66 +151,120 @@ export const milestones: Milestone[] = [
 export const documents: Document[] = [
   {
     id: 1,
-    title: "Project Charter",
-    description: "Official project charter outlining the scope, objectives, stakeholders, and governance of the research project.",
-    fileUrl: "#",
+    title: "Proposal Report (IT21266546) ",
+    description: "Group final report detailing the complete research project, methodology, and findings.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/EdwvFDmGtiZBqPC5gyH6T7kBl_dAQ45TKIkSiQbwrGDdiQ?e=tXaj66",
     fileType: "PDF",
-    dateUploaded: "January 10, 2025"
+    dateUploaded: "March 31, 2025",
+    submissionType: "Group"
   },
   {
     id: 2,
-    title: "Research Proposal",
-    description: "Detailed research proposal including problem statement, methodology, and expected contributions.",
-    fileUrl: "#",
+    title: "Proposal Report (IT21232190)",
+    description: "Academic research paper summarizing key findings and contributions.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/EbxQ8_rb96NLnOfNplGkh3oBxuEHFUv4iE9a83cf0tZSYA?e=9e7bOW",
     fileType: "PDF",
-    dateUploaded: "January 15, 2025"
+    dateUploaded: "April 11, 2025",
+    submissionType: "Group"
+  },
+  {
+    id: 2,
+    title: "Proposal Report (IT21268380)",
+    description: "Academic research paper summarizing key findings and contributions.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/Ef82ikNkiMxFoBvs1ryqupgBM3MQQ8Y4y9f6jSR9BsSI_w?e=KTD6Fd",
+    fileType: "PDF",
+    dateUploaded: "April 11, 2025",
+    submissionType: "Group"
+  },
+    {
+    id: 2,
+    title: "Proposal Report (IT21440472)",
+    description: "Academic research paper summarizing key findings and contributions.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/Ef82ikNkiMxFoBvs1ryqupgBM3MQQ8Y4y9f6jSR9BsSI_w?e=KTD6Fd",
+    fileType: "PDF",
+    dateUploaded: "April 11, 2025",
+    submissionType: "Group"
   },
   {
     id: 3,
-    title: "Literature Survey",
-    description: "Comprehensive review of academic and industry literature related to agile user stories.",
-    fileUrl: "#",
+    title: "Final Report (IT21266546)",
+    description: "Individual final report submission for team member IT21216800.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/EVz4D1Tpn4RKn4O7I0bwZ4EBi1kVsIyNpnucMyGwK7u1CA?e=YQE3HU",
     fileType: "PDF",
-    dateUploaded: "March 5, 2025"
+    dateUploaded: "April 11, 2025",
+    submissionType: "Individual"
+  },
+ {
+    id: 2,
+    title: "Final Report (IT21232190)",
+    description: "Academic research paper summarizing key findings and contributions.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/ESW3KMZBuZlLtRw9-I5oSRYBd9jijtk4JMlVi42grVm-9Q?e=u1AnEz",
+    fileType: "PDF",
+    dateUploaded: "April 11, 2025",
+    submissionType: "Group"
   },
   {
-    id: 4,
-    title: "Progress Report Q1",
-    description: "First quarterly progress report detailing research activities and preliminary findings.",
-    fileUrl: "#",
+    id: 2,
+    title: "Final Report (IT21268380)",
+    description: "Academic research paper summarizing key findings and contributions.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/EcYuHt9ap5lOgdjjk4LzWGkBImHE-GCnwLKxViJxUk7B9w?e=1POfM9",
     fileType: "PDF",
-    dateUploaded: "April 1, 2025"
+    dateUploaded: "April 11, 2025",
+    submissionType: "Group"
+  },
+    {
+    id: 2,
+    title: "Final Report (IT21440472)",
+    description: "Academic research paper summarizing key findings and contributions.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/Ef82ikNkiMxFoBvs1ryqupgBM3MQQ8Y4y9f6jSR9BsSI_w?e=KTD6Fd",
+    fileType: "PDF",
+    dateUploaded: "April 11, 2025",
+    submissionType: "Group"
   },
   {
     id: 5,
-    title: "Research Methodology",
-    description: "Detailed explanation of the research methodology adopted for this project.",
-    fileUrl: "#",
+    title: "Final Report (IT21260056)",
+    description: "Individual final report submission for team member IT21260056.",
+    fileUrl: "https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/EbfYvnzUMpJDlQ164slrGpEBhCOclAhC4n8SP6zXRCP0OA?e=d1J5iM",
     fileType: "PDF",
-    dateUploaded: "May 12, 2025"
+    dateUploaded: "April 11, 2025",
+    submissionType: "Individual"
+  },
+  {
+    id: 6,
+    title: "Research Poster",
+    description: "Visual presentation of the research project and key findings.",
+    fileUrl: "https://drive.google.com/file/d/6_research_poster/view?usp=sharing",
+    fileType: "PDF",
+    dateUploaded: "May 15, 2025",
+    submissionType: "Group"
   }
 ];
 
 export const presentations: Presentation[] = [
   {
     id: 1,
-    title: "Project Kickoff",
+    title: "Proposal Presentation",
     date: "January 20, 2025",
     description: "Initial presentation introducing the research project to stakeholders.",
-    slideUrl: "#"
+    slideUrl: "https://mysliit.sharepoint.com/:p:/s/CDAPSubmissionCloud/Ed0e8Bs2miBEmuEEAkle-FoBWkUhUihe6ZGAj02StuZiiw?e=gNcKF4",
+    thumbnailUrl: "https://media.istockphoto.com/id/1954024483/vector/print.jpg?s=612x612&w=0&k=20&c=LBNE5omQykiu4WPc1XFq5Y2vLWbZi-9I8madE4uQ-eI="
   },
   {
     id: 2,
-    title: "Literature Review Findings",
+    title: "PP1 Presentation",
     date: "March 10, 2025",
     description: "Presentation of key findings from the literature review and identification of research gaps.",
-    slideUrl: "#"
+    slideUrl: "https://drive.google.com/file/d/1XYZ789abc123DEF456ghi789JKL012mno/view?usp=sharing",
+    thumbnailUrl: "https://media.istockphoto.com/id/1954024483/vector/print.jpg?s=612x612&w=0&k=20&c=LBNE5omQykiu4WPc1XFq5Y2vLWbZi-9I8madE4uQ-eI="
   },
+
   {
     id: 3,
-    title: "First Quarter Progress",
+    title: "PP2 Presentation",
     date: "April 15, 2025",
     description: "Update on project progress, challenges encountered, and next steps.",
-    slideUrl: "#"
+    slideUrl: "https://mysliit.sharepoint.com/:p:/s/CDAPSubmissionCloud/EVJ5OqjTxcZLtsIwKB0vZSIBlaxBCk8UivGFDh976P_iIw?e=fPbRci",
+    thumbnailUrl: "https://media.istockphoto.com/id/1954024483/vector/print.jpg?s=612x612&w=0&k=20&c=LBNE5omQykiu4WPc1XFq5Y2vLWbZi-9I8madE4uQ-eI="
   }
 ];

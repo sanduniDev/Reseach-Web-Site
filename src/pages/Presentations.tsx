@@ -46,7 +46,22 @@ const Presentations: React.FC = () => {
                   <CardBody>
                     <div className="flex flex-col h-full">
                       <div className="relative mb-6 pb-[56.25%] bg-gray-100 rounded-lg overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center">
+                        {pres.thumbnailUrl ? (
+                          <img 
+                            src={pres.thumbnailUrl} 
+                            alt={`${pres.title} thumbnail`}
+                            className="absolute inset-0 w-full h-full object-cover"
+                            onError={(e) => {
+                              // Fallback to icon if image fails to load
+                              e.currentTarget.style.display = 'none';
+                              const fallbackElement = e.currentTarget.nextElementSibling as HTMLElement;
+                              if (fallbackElement) {
+                                fallbackElement.style.display = 'flex';
+                              }
+                            }}
+                          />
+                        ) : null}
+                        <div className="absolute inset-0 flex items-center justify-center bg-gray-100" style={{ display: pres.thumbnailUrl ? 'none' : 'flex' }}>
                           <Presentation size={40} className="text-gray-400" />
                         </div>
                       </div>
@@ -63,6 +78,8 @@ const Presentations: React.FC = () => {
                       <div className="mt-auto pt-4">
                         <a 
                           href={pres.slideUrl} 
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                         >
                           <ExternalLink size={16} className="mr-2" />

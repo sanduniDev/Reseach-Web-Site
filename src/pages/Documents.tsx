@@ -2,11 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from '../components/ui/SectionHeading';
 import { Card, CardBody } from '../components/ui/Card';
-import { FileText, Download, Calendar } from 'lucide-react';
+import { FileText, Download, Calendar, Users, User } from 'lucide-react';
 import { documents } from '../data';
 
 const Documents: React.FC = () => {
-  // Helper to determine file icon/color
   const getFileTypeInfo = (fileType: string) => {
     switch (fileType.toLowerCase()) {
       case 'pdf':
@@ -82,12 +81,23 @@ const Documents: React.FC = () => {
                         
                         <p className="text-gray-600 mb-4 flex-grow">{doc.description}</p>
                         
-                        <div className="mt-auto">
+                        <div className="mt-auto space-y-3">
+                          <div className="flex items-center text-sm text-gray-500">
+                            {doc.submissionType === 'Group' ? (
+                              <Users size={14} className="mr-1" />
+                            ) : (
+                              <User size={14} className="mr-1" />
+                            )}
+                            <span>{doc.submissionType} Submission</span>
+                          </div>
+                          
                           <a 
-                            href={doc.fileUrl} 
-                            className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
+                            href={doc.fileUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 w-full justify-center"
                           >
-                            <Download size={16} className="mr-1" />
+                            <Download size={16} className="mr-2" />
                             Download {doc.fileType}
                           </a>
                         </div>

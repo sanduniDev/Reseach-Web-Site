@@ -28,6 +28,7 @@ export interface Document {
   fileUrl: string;
   fileType: string;
   dateUploaded: string;
+  submissionType: 'Individual' | 'Group';
 }
 
 export interface Presentation {
@@ -36,6 +37,7 @@ export interface Presentation {
   date: string;
   description: string;
   slideUrl: string;
+   thumbnailUrl?: string;
 }
 
 export interface Project {

@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from '../components/ui/SectionHeading';
 import { Card, CardBody } from '../components/ui/Card';
-import { FileText, Download, Calendar, Users, User } from 'lucide-react';
-import { documents } from '../data';
+import { FileText, Download, Calendar, Users, User, BookOpen } from 'lucide-react';
+import { documents, references } from '../data';
 
 const Documents: React.FC = () => {
+
+ const [showReferences, setShowReferences] = useState(false);
+
+
   const getFileTypeInfo = (fileType: string) => {
     switch (fileType.toLowerCase()) {
       case 'pdf':
@@ -111,7 +115,7 @@ const Documents: React.FC = () => {
         </div>
       </section>
 
-      {/* Additional Resources */}
+      {/* Additional Resources
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
@@ -190,7 +194,44 @@ const Documents: React.FC = () => {
             </motion.div>
           </div>
         </div>
+      </section> */}
+
+ {/* References Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading 
+            title="References" 
+            subtitle="Comprehensive list of references cited in our research"
+          />
+          
+          <div className="mt-12">
+            <Card>
+              <CardBody>
+                {showReferences ? (
+                  <div className="space-y-4">
+                    {references.map((ref, index) => (
+                      <div key={index} className="text-gray-700">
+                        {ref}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-8">
+                    <BookOpen size={48} className="mx-auto text-gray-400 mb-4" />
+                    <button
+                      onClick={() => setShowReferences(true)}
+                      className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700"
+                    >
+                      View References
+                    </button>
+                  </div>
+                )}
+              </CardBody>
+            </Card>
+          </div>
+        </div>
       </section>
+
 
       {/* Document Request */}
       <section className="py-16 bg-gray-100">

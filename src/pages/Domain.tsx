@@ -152,80 +152,80 @@ const Domain: React.FC = () => {
       </section>
 
       {/* Project Objectives */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading 
-            title="Project Objectives" 
-            subtitle="The specific goals we aim to achieve through this research"
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <Card>
-              <CardBody>
-                <div className="flex flex-col h-full">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
-                      <span className="text-primary-700 font-bold">1</span>
-                    </div>
-                    <h3 className="text-lg font-semibold">Develop a Novel Methodology</h3>
-                  </div>
-                  <p className="text-gray-600 flex-grow">
-                    Create and validate a new methodological approach to user story development that integrates NLP techniques with domain expertise to enhance story quality and completeness.
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-            
-            <Card>
-              <CardBody>
-                <div className="flex flex-col h-full">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
-                      <span className="text-primary-700 font-bold">2</span>
-                    </div>
-                    <h3 className="text-lg font-semibold">Establish Quality Metrics</h3>
-                  </div>
-                  <p className="text-gray-600 flex-grow">
-                    Define and validate a comprehensive set of metrics for evaluating user story quality that can be automated and applied consistently across projects.
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-            
-            <Card>
-              <CardBody>
-                <div className="flex flex-col h-full">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
-                      <span className="text-primary-700 font-bold">3</span>
-                    </div>
-                    <h3 className="text-lg font-semibold">Prototype Tool Development</h3>
-                  </div>
-                  <p className="text-gray-600 flex-grow">
-                    Build a proof-of-concept tool that implements the proposed methodology and allows for real-world validation of our approach with agile development teams.
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
-            
-            <Card>
-              <CardBody>
-                <div className="flex flex-col h-full">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
-                      <span className="text-primary-700 font-bold">4</span>
-                    </div>
-                    <h3 className="text-lg font-semibold">Measure Practical Impact</h3>
-                  </div>
-                  <p className="text-gray-600 flex-grow">
-                    Quantify the real-world benefits of our approach by measuring improvements in development efficiency, requirement clarity, and project outcomes when using our methodology.
-                  </p>
-                </div>
-              </CardBody>
-            </Card>
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <SectionHeading 
+      title="Project Objectives" 
+      subtitle="The specific goals we aim to achieve through this research"
+    />
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      <Card>
+        <CardBody>
+          <div className="flex flex-col h-full">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
+                <span className="text-primary-700 font-bold">1</span>
+              </div>
+              <h3 className="text-lg font-semibold">Automated Conversation Capture, Analysis, and Visual Representation</h3>
+            </div>
+            <p className="text-gray-600 flex-grow">
+              Implement a neural network for accurate transcription and sentiment analysis of stakeholder meetings. Extract key requirements and context from transcriptions to generate detailed user stories, and use NLP to refine these for clear documentation.
+            </p>
           </div>
-        </div>
-      </section>
+        </CardBody>
+      </Card>
+      
+      <Card>
+        <CardBody>
+          <div className="flex flex-col h-full">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
+                <span className="text-primary-700 font-bold">2</span>
+              </div>
+              <h3 className="text-lg font-semibold">Automated Extraction and Classification of Tasks and Non-Functional Requirements</h3>
+            </div>
+            <p className="text-gray-600 flex-grow">
+              Gather and organize data from storyboards and user stories for analysis. Use NLP preprocessing and supervised machine learning to classify tasks and non-functional requirements and assign roles accurately.
+            </p>
+          </div>
+        </CardBody>
+      </Card>
+      
+      <Card>
+        <CardBody>
+          <div className="flex flex-col h-full">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
+                <span className="text-primary-700 font-bold">3</span>
+              </div>
+              <h3 className="text-lg font-semibold">Machine Learning-Enhanced Agile Project Management Dashboard</h3>
+            </div>
+            <p className="text-gray-600 flex-grow">
+              Gather and preprocess historical and real-time data on user stories, project scope, and sprints. Train machine learning models and develop a dashboard to display user stories, predictions on time and budget, and client feedback.
+            </p>
+          </div>
+        </CardBody>
+      </Card>
+      
+      <Card>
+        <CardBody>
+          <div className="flex flex-col h-full">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center mr-3">
+                <span className="text-primary-700 font-bold">4</span>
+              </div>
+              <h3 className="text-lg font-semibold">Visualization and Tool Development</h3>
+            </div>
+            <p className="text-gray-600 flex-grow">
+              Develop tools to create images from user stories, visually representing images and dependencies of requirements for better understanding and communication.
+            </p>
+          </div>
+        </CardBody>
+      </Card>
+    </div>
+  </div>
+</section>
 
       {/* Methodology */}
       <section className="py-16 bg-gray-50">

@@ -72,8 +72,8 @@ const ContactUs: React.FC = () => {
                       <div className="ml-4">
                         <h3 className="text-lg font-medium">Email</h3>
                         <p className="mt-1 text-gray-600">
-                          <a href="mailto:contact@agilestorybuilder.research" className="hover:text-primary-600">
-                            contact@agilestorybuilder.research
+                          <a href="mailto:agileuserstorybuilder@gmail.com" className="hover:text-primary-600">
+                            agileuserstorybuilder@gmail.com
                           </a>
                         </p>
                         <p className="mt-1 text-sm text-gray-500">For general inquiries</p>
@@ -93,8 +93,8 @@ const ContactUs: React.FC = () => {
                       <div className="ml-4">
                         <h3 className="text-lg font-medium">Phone</h3>
                         <p className="mt-1 text-gray-600">
-                          <a href="tel:+11234567890" className="hover:text-primary-600">
-                            +1 (123) 456-7890
+                          <a href="tel:+94703376980" className="hover:text-primary-600">
+                            +94 70 337 6980
                           </a>
                         </p>
                         <p className="mt-1 text-sm text-gray-500">Monday to Friday, 9AM to 5PM</p>
@@ -114,10 +114,10 @@ const ContactUs: React.FC = () => {
                       <div className="ml-4">
                         <h3 className="text-lg font-medium">Location</h3>
                         <p className="mt-1 text-gray-600">
-                          Computer Science Department<br />
-                          University Research Center<br />
-                          123 Innovation Drive<br />
-                          Tech City, TC 98765
+                          SLIIT Malabe Campus<br />
+                          New Kandy Rd<br />
+                          Malabe 10115<br />
+                          Sri Lanka
                         </p>
                       </div>
                     </div>
@@ -138,7 +138,7 @@ const ContactUs: React.FC = () => {
                           <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
                           <p>Saturday - Sunday: Closed</p>
                         </div>
-                        <p className="mt-2 text-sm text-gray-500">All times are in Eastern Time (ET)</p>
+                        <p className="mt-2 text-sm text-gray-500">All times are in Sri Lanka Standard Time (SLST)</p>
                       </div>
                     </div>
                   </CardBody>
@@ -154,7 +154,7 @@ const ContactUs: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
             title="Find Us" 
-            subtitle="Located in the heart of the university research district"
+            subtitle="Located in SLIIT Malabe Campus"
             center={true}
           />
           

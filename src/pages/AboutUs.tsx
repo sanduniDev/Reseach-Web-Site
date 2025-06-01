@@ -6,6 +6,15 @@ import { Github, Mail, Linkedin, Twitter } from 'lucide-react';
 import { teamMembers } from '../data';
 
 const AboutUs: React.FC = () => {
+  // Separate supervisors and students
+  const supervisors = teamMembers.filter(member =>
+    member.role.toLowerCase().includes('supervisor')
+  );
+
+  const students = teamMembers.filter(member =>
+    !member.role.toLowerCase().includes('supervisor')
+  );
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
@@ -28,13 +37,14 @@ const AboutUs: React.FC = () => {
       {/* Team Section */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading 
-            title="Research Team" 
+          <SectionHeading
+            title="Research Team"
             subtitle="The dedicated professionals driving our research forward"
           />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            {teamMembers.map((member, index) => (
+
+          {/* Supervisors Row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            {supervisors.map((member, index) => (
               <motion.div
                 key={member.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -55,7 +65,78 @@ const AboutUs: React.FC = () => {
                       <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                       <p className="text-primary-600 font-medium mb-3">{member.role}</p>
                       <p className="text-gray-600 mb-4">{member.bio}</p>
-                      
+                      <div className="flex space-x-3 mt-auto">
+                        {member.socialLinks.github && (
+                          <a
+                            href={member.socialLinks.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-primary-600 transition-colors"
+                            aria-label={`${member.name}'s GitHub`}
+                          >
+                            <Github size={20} />
+                          </a>
+                        )}
+                        {member.socialLinks.linkedin && (
+                          <a
+                            href={member.socialLinks.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-primary-600 transition-colors"
+                            aria-label={`${member.name}'s LinkedIn`}
+                          >
+                            <Linkedin size={20} />
+                          </a>
+                        )}
+                        {member.socialLinks.twitter && (
+                          <a
+                            href={member.socialLinks.twitter}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-primary-600 transition-colors"
+                            aria-label={`${member.name}'s Twitter`}
+                          >
+                            <Twitter size={20} />
+                          </a>
+                        )}
+                        <a
+                          href={`mailto:${member.socialLinks.email}`}
+                          className="text-gray-600 hover:text-primary-600 transition-colors"
+                          aria-label={`Email ${member.name}`}
+                        >
+                          <Mail size={20} />
+                        </a>
+                      </div>
+                    </div>
+                  </CardBody>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Students Row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {students.map((member, index) => (
+              <motion.div
+                key={member.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+              >
+                <Card className="h-full">
+                  <CardBody>
+                    <div className="flex flex-col items-center text-center">
+                      <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                        <img
+                          src={member.imageUrl}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                      <p className="text-primary-600 font-medium mb-3">{member.role}</p>
+                      <p className="text-gray-600 mb-4">{member.bio}</p>
                       <div className="flex space-x-3 mt-auto">
                         {member.socialLinks.github && (
                           <a
@@ -128,7 +209,7 @@ const AboutUs: React.FC = () => {
                 Our interdisciplinary team brings together expertise in software engineering, linguistics, machine learning, and human-computer interaction to address this complex challenge from multiple perspectives.
               </p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -177,12 +258,12 @@ const AboutUs: React.FC = () => {
       {/* Institutional Support */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading 
-            title="Our Partners" 
+          <SectionHeading
+            title="Our Partners"
             subtitle="Institutions and organizations supporting our research"
             center={true}
           />
-          
+
           <div className="mt-12 flex flex-wrap justify-center gap-8 items-center">
             <motion.div
               className="bg-white p-6 rounded-lg shadow-sm"
@@ -195,7 +276,7 @@ const AboutUs: React.FC = () => {
                 <span className="text-gray-500 font-medium">University</span>
               </div>
             </motion.div>
-            
+
             <motion.div
               className="bg-white p-6 rounded-lg shadow-sm"
               initial={{ opacity: 0, y: 20 }}
@@ -207,7 +288,7 @@ const AboutUs: React.FC = () => {
                 <span className="text-gray-500 font-medium">Research Lab</span>
               </div>
             </motion.div>
-            
+
             <motion.div
               className="bg-white p-6 rounded-lg shadow-sm"
               initial={{ opacity: 0, y: 20 }}
@@ -219,7 +300,7 @@ const AboutUs: React.FC = () => {
                 <span className="text-gray-500 font-medium">Tech Partner</span>
               </div>
             </motion.div>
-            
+
             <motion.div
               className="bg-white p-6 rounded-lg shadow-sm"
               initial={{ opacity: 0, y: 20 }}
@@ -239,7 +320,7 @@ const AboutUs: React.FC = () => {
       <section className="py-16 bg-gradient-to-r from-secondary-600 to-secondary-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <motion.h2 
+            <motion.h2
               className="text-3xl font-bold mb-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -248,7 +329,7 @@ const AboutUs: React.FC = () => {
             >
               Interested in Collaborating?
             </motion.h2>
-            <motion.p 
+            <motion.p
               className="text-xl mb-8 text-teal-100"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -257,8 +338,8 @@ const AboutUs: React.FC = () => {
             >
               We're always looking for research collaborators, industry partners, and participants for our studies. If you're interested in contributing to our research, we'd love to hear from you.
             </motion.p>
-            <motion.a 
-              href="/contact" 
+            <motion.a
+              href="/contact"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-secondary-700 bg-white hover:bg-secondary-50 md:py-4 md:text-lg md:px-8"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
